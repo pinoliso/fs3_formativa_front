@@ -1,0 +1,30 @@
+
+<form (ngSubmit)="onSubmit()" #bookForm="ngForm" class="book-form">
+  <h2>{{ editing ? 'Editar Libro' : 'Nuevo Libro' }}</h2>
+  <mat-form-field appearance="outline">
+    <mat-label>Título</mat-label>
+    <input matInput name="title" [(ngModel)]="book.title" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Autor</mat-label>
+    <input matInput name="author" [(ngModel)]="book.author" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>A o de publicación</mat-label>
+    <input matInput name="publisherYear" [(ngModel)]="book.publisherYear" required> 
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Género</mat-label>
+    <input matInput name="genre" [(ngModel)]="book.genre" required>
+  </mat-form-field>
+
+  <div class="form-actions">
+    <button mat-raised-button color="primary" class="button" type="submit">{{ editing ? 'Guardar Cambios' : 'Agregar Libro' }}</button>
+    <button mat-button type="button" class="button" (click)="cancel()">Cancelar</button>
+  </div>
+</form>
+
+  

@@ -1,0 +1,31 @@
+<div class="header">
+  <h1>Libros Disponibles</h1>
+  <button mat-mini-fab class="button" (click)="openBookForm()">Agregar Libro</button>
+  <!-- <mat-form-field appearance="fill" class="search-bar">
+    <mat-label>Buscar libro</mat-label>
+    <input matInput placeholder="Escribe un título o autor..." (keyup)="applyFilter($event)">
+  </mat-form-field> -->
+</div>
+
+<div class="book-list">
+  <mat-card *ngFor="let book of books" class="book-card">
+    <mat-card-header>
+      <mat-card-title>{{ book.title }}</mat-card-title>
+      <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <mat-card-content class="book-card-content">
+      <p>{{ book.publisherYear }}</p>
+      <p>{{ book.genre }}</p>
+    </mat-card-content> -->
+    <mat-card-actions class="book-card-actions">
+      <button mat-icon-button color="primary" aria-label="Editar" (click)="editBook(book)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" aria-label="Eliminar" (click)="deleteBook(book)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+  

@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    width: 300px;
+  }
+  
+  .book-list {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 20px;
+  }
+  
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .book-card-content {
+    flex-grow: 1;
+  }
+
+  .book-card-actions {
+    margin-top: 10px;;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; /* Espacio entre los botones */
+  }
+
+  .button {
+    background-color: #3a3a3a !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    width: auto !important;
+    padding: 0 20px !important;
+}
+  

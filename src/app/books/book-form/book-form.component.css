@@ -1,0 +1,23 @@
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.button {
+  background-color: #3a3a3a !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  width: auto !important;
+  padding: 0 20px !important;
+}
